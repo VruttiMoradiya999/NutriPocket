@@ -1,0 +1,181 @@
+.scores-section {
+    padding: 8rem 2rem;
+    background: #111;
+    color: white;
+}
+
+.scores-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.scores-header .section-title {
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    opacity: 1;
+}
+
+.scores-display {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.score-main-card {
+    background: #1A1A1A;
+    border-radius: 30px;
+    padding: 3rem;
+    border: 2px solid #333;
+    box-shadow: 10px 10px 0px 0px #000;
+}
+
+.metric-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.metric-header h3 {
+    font-size: 1.8rem;
+}
+
+.ai-badge {
+    background: var(--primary-blue);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.comparison-logic {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.food-item {
+    flex: 1;
+    background: #222;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.food-visual {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.food-info h4 {
+    margin-bottom: 0.25rem;
+}
+
+.food-info p {
+    opacity: 1;
+}
+
+.score-circle {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 50px;
+    height: 50px;
+    background: #444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.score-circle.highlight {
+    background: var(--secondary-pink);
+    box-shadow: 0 0 20px rgba(255, 77, 170, 0.4);
+}
+
+.vs {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #444;
+}
+
+.score-explanation {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 12px;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #AAA;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.scores-grid-small {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.small-card {
+    background: #1A1A1A;
+    padding: 2rem;
+    border-radius: 24px;
+    border: 2px solid #333;
+    box-shadow: 6px 6px 0px 0px #000;
+}
+
+.small-card.pink-card {
+    background: var(--secondary-pink);
+    border: none;
+    grid-column: span 2;
+    box-shadow: 8px 8px 0px 0px rgba(255, 77, 170, 0.3);
+}
+
+.small-card h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+
+.stat {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.small-card p {
+    font-size: 0.9rem;
+    opacity: 1;
+}
+
+.pink-card h4,
+.pink-card p {
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .scores-display {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-logic {
+        flex-direction: column;
+    }
+
+    .vs {
+        margin: 1rem 0;
+    }
+}

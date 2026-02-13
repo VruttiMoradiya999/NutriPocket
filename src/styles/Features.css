@@ -1,0 +1,117 @@
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.text-blue {
+    color: var(--primary-blue);
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #F0F0F0;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.feature-card p {
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.advanced-belt {
+    background: #1A1A1A;
+    color: white;
+    padding: 3rem;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.advanced-belt h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 1;
+}
+
+.advanced-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.adv-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.adv-icon {
+    background: rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--secondary-pink);
+    transition: transform 0.3s;
+}
+
+.adv-item:hover .adv-icon {
+    transform: scale(1.1);
+    background: var(--secondary-pink);
+    color: white;
+}
+
+.adv-name {
+    font-weight: 600;
+}

@@ -1,0 +1,126 @@
+.problem-section {
+    background: #FFF;
+    padding: 8rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logic {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.label {
+    background: #F0F0F0;
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-logic h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-top: 1.5rem;
+}
+
+.text-pink {
+    background: var(--secondary-pink);
+    color: white;
+    padding: 0.1rem 0.6rem;
+    border-radius: 6px;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transform: rotate(1deg);
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.problem-card {
+    background: #F9F9F9;
+    padding: 3rem 2rem;
+    border-radius: 24px;
+    border: 2px solid #EEE;
+    box-shadow: 8px 8px 0px 0px #F0F0F0;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.app-name {
+    font-weight: 700;
+    color: #888;
+}
+
+.fail-tag {
+    color: #EF4444;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.win-tag {
+    color: #10B981;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.problem-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.problem-card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.highlight-card {
+    background: var(--primary-blue);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 12px 12px 0px 0px #0037B3;
+    border: 2px solid #0037B3;
+}
+
+.highlight-card .app-name,
+.highlight-card .win-tag,
+.highlight-card p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.problem-footer {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-style: italic;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 992px) {
+    .problem-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-card {
+        transform: none;
+    }
+}
