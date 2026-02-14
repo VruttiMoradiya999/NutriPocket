@@ -8,23 +8,33 @@ import MessRescue from './components/MessRescue';
 import ValueProp from './components/ValueProp';
 import ExpenseCalculator from './components/ExpenseCalculator';
 import MealSuggestions from './components/MealSuggestions';
-import './index.css';
+import { Routes, Route } from 'react-router-dom';
+import SmartScan from './components/SmartScan';
 
 function App() {
   const [budget, setBudget] = React.useState(150);
+
+  const Home = () => (
+    <>
+      <Hero />
+      <Marquee />
+      <ProblemStatement />
+      <Features />
+      <ExpenseCalculator budget={budget} setBudget={setBudget} />
+      <MealSuggestions budget={budget} />
+      <MessRescue />
+      <ValueProp />
+    </>
+  );
 
   return (
     <div className="app">
       <Navbar />
       <main>
-        <Hero />
-        <Marquee />
-        <ProblemStatement />
-        <Features />
-        <ExpenseCalculator budget={budget} setBudget={setBudget} />
-        <MealSuggestions budget={budget} />
-        <MessRescue />
-        <ValueProp />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/smart-scan" element={<SmartScan />} />
+        </Routes>
       </main>
       <footer className="footer">
         <div className="footer-content">
