@@ -6,9 +6,13 @@ import Features from './components/Features';
 import ProblemStatement from './components/ProblemStatement';
 import MessRescue from './components/MessRescue';
 import ValueProp from './components/ValueProp';
+import ExpenseCalculator from './components/ExpenseCalculator';
+import MealSuggestions from './components/MealSuggestions';
 import './index.css';
 
 function App() {
+  const [budget, setBudget] = React.useState(150);
+
   return (
     <div className="app">
       <Navbar />
@@ -17,6 +21,8 @@ function App() {
         <Marquee />
         <ProblemStatement />
         <Features />
+        <ExpenseCalculator budget={budget} setBudget={setBudget} />
+        <MealSuggestions budget={budget} />
         <MessRescue />
         <ValueProp />
       </main>

@@ -1,0 +1,160 @@
+.calculator-section {
+    background-color: #FF4DAA;
+    /* Deep Pink from the reference */
+    padding: 8rem 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.calculator-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.calc-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+}
+
+.highlight-box {
+    background: #0050FF;
+    /* Primary blue from context */
+    padding: 0.2rem 1rem;
+    display: inline-block;
+    transform: rotate(-2deg);
+    margin: 0 0.5rem;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.calc-main-value {
+    font-size: 8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
+}
+
+.calc-main-value span {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.calc-subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.slider-wrapper {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    position: relative;
+}
+
+.budget-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    outline: none;
+    margin-bottom: 1.5rem;
+}
+
+.budget-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.budget-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.slider-marks {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.calc-disclaimer {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.small-text {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+/* Decorative patterns matching the reference image */
+.decor-wave {
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    width: 200px;
+    height: 150px;
+    background-image: radial-gradient(circle, transparent 20%, #FF4DAA 20%, #FF4DAA 80%, transparent 80%, transparent),
+        radial-gradient(circle, transparent 20%, #FF4DAA 20%, #FF4DAA 80%, transparent 80%, transparent);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    opacity: 0.3;
+    transform: rotate(15deg);
+}
+
+.decor-flower {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    mask: radial-gradient(circle, transparent 30%, black 31%),
+        conic-gradient(from 0deg, black 0 30deg, transparent 30deg 60deg) repeat;
+    mask-size: 100% 100%, 20% 20%;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+/* Mocking the flower shape more accurately with SVG if needed, but for now CSS shapes */
+.decor-flower::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+    .calc-main-value {
+        font-size: 5rem;
+    }
+
+    .calc-title {
+        font-size: 1.8rem;
+    }
+}

@@ -7,17 +7,18 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="logo">
           <div className="logo-icon">
-             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4Z" fill="var(--secondary-pink)"/>
-                <path d="M16 10C12.6863 10 10 12.6863 10 16C10 19.3137 12.6863 22 16 22C19.3137 22 22 19.3137 22 16C22 12.6863 19.3137 10 16 10Z" fill="white"/>
-                <path d="M16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13Z" fill="var(--primary-blue)"/>
-             </svg>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4Z" fill="var(--secondary-pink)" />
+              <path d="M16 10C12.6863 10 10 12.6863 10 16C10 19.3137 12.6863 22 16 22C19.3137 22 22 19.3137 22 16C22 12.6863 19.3137 10 16 10Z" fill="white" />
+              <path d="M16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13Z" fill="var(--primary-blue)" />
+            </svg>
           </div>
           <span className="logo-text">NutriPocket</span>
         </div>
-        
+
         <ul className="nav-links">
           <li><a href="#features">Features</a></li>
+          <li><a href="#calculator">Calculator</a></li>
           <li><a href="#mess-rescue">Mess Rescue</a></li>
           <li><a href="#scores">Scores <span className="badge">NEW</span></a></li>
           <li><a href="#pricing">Pricing</a></li>
